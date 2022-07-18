@@ -12,7 +12,4 @@ while status:
         
     if c == readchar.key.DOWN:
         status = False
-    else:
-        print("Ingrese caracter: ")
-        c = readchar.readkey()
-        
+
