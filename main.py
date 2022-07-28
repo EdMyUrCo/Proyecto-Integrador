@@ -1,23 +1,24 @@
 import os
-os.system("clear")
+
+
 import readchar
 
 nombre = input("Digite tu nombre: ")
 
 print("Bienvenid@ al proyecto", nombre)
 
-# status = True
+status = True
+cont = 0
 
-# while status:
-#     print("Ingrese caracter: ")
-#     c = readchar.readkey()
-        
-#     if c == readchar.key.DOWN:
-#         status = False
-
-for i in range (0, 50+1):
+while status and cont < 50:
+    
     print("Ingrese caracter: ")
     c = readchar.readkey()
-
-    if c == readchar.key.CTRL_N:
+        
+    if c == readchar.key.DOWN:
+        status = False
+    
+    if c == "n":
+        cont += 1
+        os.system("clear")
         
