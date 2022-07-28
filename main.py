@@ -20,5 +20,6 @@ while status and cont < 50:
     
     if c == "n":
         cont += 1
-        os.system("clear")
+    
+    os.system('cls' if os.name == 'nt' else 'clear')
         
