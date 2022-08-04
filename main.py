@@ -1,6 +1,5 @@
 import os
 
-
 import readchar
 
 nombre = input("Digite tu nombre: ")
@@ -13,13 +12,13 @@ cont = 0
 while status and cont < 50:
     
     print("Ingrese caracter: ")
-    c = readchar.readkey()
+    char = readchar.readkey()
         
-    if c == readchar.key.DOWN:
+    if char == readchar.key.DOWN:
         status = False
     
-    if c == "n":
+    if char == "n":
         cont += 1
     
     os.system('cls' if os.name == 'nt' else 'clear')
-        
+    print(cont)
