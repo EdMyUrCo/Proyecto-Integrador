@@ -18,10 +18,10 @@ def main():
             (3, 2), (3, 3), (3, 5),
             (4, 1), (4, 2), (4, 3), (4, 5),
             (5, 0), (5, 1), (5, 5))
-    lab = laberinto(6, muro)
+    imprimir_laberinto = laberinto(6, muro)
 
     # Mostrar el laberinto por pantalla
-    for i in lab:
+    for i in imprimir_laberinto:
         print(''.join(i))
 
 if __name__ == "__main__":
